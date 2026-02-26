@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIYAMIN</title>
+    <link rel="stylesheet" href="cadastro.css">
+    
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-container">
+                <h1 class="logo"><span class="logo-tech">BIYAMIN</span></h1>
+                <p class="tagline">O futuro do desenvolvimento Web</p>
+            </div>
+
+            <div class="tech-elements">
+                <div class="circuit-line"></div>
+                <div class="floating-element element-1">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-element element-2">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="floating-element element-3">
+                    <i class="fas fa-microchip"></i>
+                </div>
+            </div>
+
+            <div class="features">
+                <h3><i class="fas fa-rocket"></i> Tecnologia de Ponta</h3>
+                <p>Desenvolvimento com as mais recentes inovações</p>
+
+                <h3><i class="fas fa-shield-alt"></i> Segurança Avançada</h3>
+                <p>Proteção de dados em nível empresarial</p>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="form-conatiner">
+                <div class="form-header">
+                    <h2>Criar Conta</h2>
+                    <p>Junte-se à nossa rede</p>
+                </div>
+
+                <form id="registerForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">Nome</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Sobrenome</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group full-width">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">E-mail</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" id="password" name="password" required>
+                            <label for="password">Senha</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <button type="button" class="toggle-password" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <label for="confirmPassword">Confirmar Senha</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Aceito os <a href="#" class="terms-link">Termos de Serviço</a> e <a href="#" class="terms-link">Política de Privacidade</a></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="btn-text">Criar Conta</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                            <div class="btn-loading">
+                                <div class="spinner"></div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="form-footer">
+                        <p>Já tem uma conta? <a href="login.html" class="login-link">Entrar</a></p>
+                    </div>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Cadastro Concluído!</h3>
+                    <p>Bem-vindo à comunidade BIYAMIN</p>
+                    <p class="success-details">Verifique seu e-mail para ativar sua conta.</p>
+                    <button class="btn-continue" id="continueBtn">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 BIYAMIN. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <p id="notificationText"></p>
+    </div>
+    
+    </body>
+</html>
