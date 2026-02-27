@@ -15,9 +15,9 @@
 }
 
 body {
-    /* Mesmo fundo elegante do login */
+    /* Fundo escurecido com tema de academia/ferro */
     background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
-                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop');
+                url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,11 +40,11 @@ body {
     border-radius: 20px;
     border: 1px solid var(--amarelo);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
-    overflow: hidden; /* Mantém os cantos arredondados */
+    overflow: hidden; 
     position: relative;
 }
 
-/* --- PAINEL ESQUERDO (INFORMAÇÕES) --- */
+/* --- PAINEL ESQUERDO (INFORMAÇÕES DA ACADEMIA) --- */
 .left-panel {
     flex: 1;
     min-width: 350px;
@@ -59,12 +59,18 @@ body {
 
 .logo-container {
     margin-bottom: 40px;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo-tech {
     font-family: 'Orbitron', sans-serif;
     color: var(--amarelo);
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 2px;
 }
 
@@ -76,6 +82,7 @@ body {
 
 .features {
     margin-top: 40px;
+    z-index: 2;
 }
 
 .features h3 {
@@ -94,16 +101,17 @@ body {
     padding-left: 30px;
 }
 
-/* Animações dos ícones flutuantes */
+/* Animações dos ícones flutuantes (Halter, Fogo, Coração) */
 .tech-elements {
     position: absolute;
     top: 20px;
     right: 20px;
-    opacity: 0.2;
+    opacity: 0.15;
+    z-index: 1;
 }
 
 .floating-element {
-    font-size: 24px;
+    font-size: 28px;
     color: var(--amarelo);
     position: absolute;
     animation: float 4s ease-in-out infinite;
@@ -119,7 +127,7 @@ body {
     100% { transform: translateY(0px); }
 }
 
-/* --- PAINEL DIREITO (FORMULÁRIO) --- */
+/* --- PAINEL DIREITO (FORMULÁRIO DE MATRÍCULA) --- */
 .right-panel {
     flex: 1.5;
     min-width: 400px;
@@ -145,7 +153,6 @@ body {
     font-size: 15px;
 }
 
-/* Layout dos Grupos do Formulário */
 .form-group {
     display: flex;
     gap: 20px;
@@ -159,7 +166,7 @@ body {
     }
 }
 
-/* Estilo dos Inputs (Estilo Flutuante / Moderno) */
+/* Estilo dos Inputs e Rótulos Flutuantes */
 .input-group {
     position: relative;
     width: 100%;
@@ -187,7 +194,6 @@ body {
     box-shadow: 0 0 10px rgba(252, 232, 3, 0.2);
 }
 
-/* Rótulos Flutuantes (Labels) */
 .input-group label {
     position: absolute;
     left: 45px;
@@ -198,7 +204,6 @@ body {
     transition: 0.3s ease;
 }
 
-/* Quando o input é focado ou tem texto, o label sobe */
 .input-group input:focus ~ label,
 .input-group input:valid ~ label {
     top: -22px;
@@ -235,7 +240,7 @@ body {
     color: var(--amarelo);
 }
 
-/* Checkbox e Termos */
+/* Checkbox */
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -261,7 +266,7 @@ body {
     text-decoration: underline;
 }
 
-/* Botão de Submit */
+/* Botões: Finalizar Matrícula */
 .btn-submit {
     width: 100%;
     padding: 16px;
@@ -284,36 +289,33 @@ body {
     transform: translateY(-3px);
 }
 
-.btn-loading {
-    display: none; /* Oculto por padrão, seria ativado por JS */
-}
-
-.form-footer {
-    text-align: center;
-    margin-top: 20px;
+/* Botões: Voltar para o Login (O NOVO BOTÃO) */
+.btn-back-outline {
+    width: 100%;
+    padding: 16px;
+    background-color: transparent;
     color: var(--cinza-claro);
-    font-size: 14px;
-}
-
-.login-link {
-    color: var(--amarelo);
+    border: 1px solid var(--borda-fina);
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.login-link:hover {
-    text-decoration: underline;
+.btn-back-outline:hover {
+    border-color: var(--amarelo);
+    color: var(--amarelo);
+    background-color: rgba(252, 232, 3, 0.05); /* Leve brilho de fundo */
 }
 
-/* --- MENSAGEM DE SUCESSO E NOTIFICAÇÃO --- */
-.success-message {
-    display: none; /* Mantido oculto já que não há JS */
-    text-align: center;
-}
-
-.notification {
-    display: none; 
-}
+/* Telas ocultas por padrão */
+.success-message, .notification, .btn-loading { display: none; }
 
 /* --- RODAPÉ DA PÁGINA (DENTRO DO CONTAINER) --- */
 .footer {
@@ -363,5 +365,26 @@ body {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
+}
+/* --- ESTILO DA LOGO NO CABEÇALHO DO FORMULÁRIO --- */
+.form-logo {
+    width: 65px; /* Tamanho ideal para não roubar muita atenção do formulário */
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    filter: drop-shadow(0 0 8px rgba(252, 232, 3, 0.4)); /* Dá um leve brilho amarelo ao redor da logo */
+    animation: fadeInDown 0.8s ease-out; /* Pequena animação ao carregar a página */
+}
+
+/* Animação suave para a logo aparecer descendo um pouquinho */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

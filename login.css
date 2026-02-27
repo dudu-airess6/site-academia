@@ -267,3 +267,27 @@ body {
     bottom: -80px;
     right: -50px;
 }
+/* --- Botão Voltar (Outline) --- */
+.btn-back-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px; /* Dá um respiro entre o botão Entrar e o Voltar */
+    background-color: transparent;
+    color: var(--cinza-claro);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-back-outline:hover {
+    border-color: var(--amarelo);
+    color: var(--amarelo);
+    background-color: rgba(252, 232, 3, 0.05); /* Um fundo amarelo bem suave */
+    transform: translateY(-2px); /* Efeito de flutuar igual ao botão Entrar */
+}
