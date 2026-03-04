@@ -1,0 +1,100 @@
+/* =========================================
+   ESTILOS DO PAINEL DO ALUNO (Área Logada)
+   ========================================= */
+
+/* Ajuste de espaçamento do corpo da página */
+.body-painel {
+    padding-top: 80px; /* Compensa a altura do header fixo */
+}
+
+/* Header Logado - Botão Sair vermelho */
+.btn-sair {
+    color: #ff4757 !important;
+}
+
+.btn-sair:hover {
+    text-decoration: underline;
+}
+
+/* Centralização do conteúdo principal */
+.area-escolha {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-protocolos {
+    margin-top: 50px;
+}
+
+/* Customização dos Cards de Protocolo */
+.card-mass {
+    text-align: center;
+    border-color: var(--amarelo);
+}
+
+.card-cut {
+    text-align: center;
+    border-color: var(--amarelo);
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(252, 232, 3, 0.1); /* Brilho suave no fundo */
+}
+
+/* Ícones dos Cards */
+.icon-protocolo {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.icon-mass {
+    color: var(--amarelo);
+}
+
+.icon-cut {
+    color: #ff4757; /* Vermelho fogo */
+}
+
+.desc-protocolo {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Botões de Ação dos Protocolos */
+.btn-protocolo {
+    display: block;
+    margin-top: auto;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-mass {
+    border: 2px solid var(--amarelo);
+    color: var(--branco);
+}
+
+.btn-cut {
+    border: 2px solid var(--amarelo);
+    color: var(--branco);
+}
+
+/* Efeito Hover unificado para os botões */
+.btn-protocolo:hover {
+    background-color: var(--amarelo);
+    color: var(--preto);
+    border-color: var(--amarelo);
+    transform: translateY(-3px);
+}
+
+/* Rodapé travado no fundo da tela no Painel */
+.footer-fixo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

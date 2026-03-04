@@ -35,7 +35,7 @@ body {
 }
 
 .login-wrapper {
-    background-color: rgba(26, 26, 26, 0.95); /* cinza-escuro com transparência */
+    background-color: rgba(26, 26, 26, 0.95);
     padding: 40px 30px;
     border-radius: 15px;
     border: 1px solid var(--amarelo);
@@ -44,7 +44,9 @@ body {
     z-index: 10;
 }
 
-/* Cabeçalho do Login */
+/* ==================
+   CABEÇALHO & LOGO
+   ================== */
 .header {
     text-align: center;
     margin-bottom: 30px;
@@ -62,6 +64,13 @@ body {
     letter-spacing: 2px;
 }
 
+/* Adicionado para garantir que a imagem da logo não fique gigante */
+.logo img {
+    max-width: 40px; 
+    height: auto;
+    object-fit: contain;
+}
+
 .header h1 {
     font-size: 24px;
     margin-bottom: 5px;
@@ -72,7 +81,9 @@ body {
     font-size: 14px;
 }
 
-/* Formulário */
+/* ==================
+   FORMULÁRIO
+   ================== */
 .input-group {
     margin-bottom: 25px;
     position: relative;
@@ -124,7 +135,9 @@ body {
     color: var(--amarelo);
 }
 
-/* Opções (Lembrar-me e Esqueci a Senha) */
+/* ==================
+   OPÇÕES & BOTÕES
+   ================== */
 .options {
     display: flex;
     justify-content: space-between;
@@ -155,7 +168,6 @@ body {
     text-decoration: underline;
 }
 
-/* Botão de Login */
 .login-btn {
     width: 100%;
     padding: 15px;
@@ -178,7 +190,33 @@ body {
     transform: translateY(-3px);
 }
 
-/* Divisor */
+.btn-back-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: transparent;
+    color: var(--cinza-claro);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-back-outline:hover {
+    border-color: var(--amarelo);
+    color: var(--amarelo);
+    background-color: rgba(252, 232, 3, 0.05);
+    transform: translateY(-2px);
+}
+
+/* ==================
+   EXTRAS (Divisor, Footer, Decoração)
+   ================== */
 .divider {
     text-align: center;
     margin: 25px 0;
@@ -205,7 +243,6 @@ body {
     padding: 0 10px;
 }
 
-/* Rodapé do Form */
 .register-link {
     text-align: center;
     color: var(--cinza-claro);
@@ -234,7 +271,6 @@ body {
     color: #666;
 }
 
-/* Elementos Decorativos (Círculos) */
 .decoration {
     position: absolute;
     top: 0;
@@ -266,28 +302,4 @@ body {
     background-color: #444;
     bottom: -80px;
     right: -50px;
-}
-/* --- Botão Voltar (Outline) --- */
-.btn-back-outline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    padding: 12px;
-    margin-top: 15px; /* Dá um respiro entre o botão Entrar e o Voltar */
-    background-color: transparent;
-    color: var(--cinza-claro);
-    border: 1px solid var(--cinza-claro);
-    border-radius: 8px;
-    font-size: 16px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.btn-back-outline:hover {
-    border-color: var(--amarelo);
-    color: var(--amarelo);
-    background-color: rgba(252, 232, 3, 0.05); /* Um fundo amarelo bem suave */
-    transform: translateY(-2px); /* Efeito de flutuar igual ao botão Entrar */
 }
