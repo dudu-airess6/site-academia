@@ -44,36 +44,51 @@
         <div class="right-panel">
             <div class="form-conatiner">
                 <div class="form-header">
-                    <div style="font-size: 50px; color: var(--amarelo); margin-bottom: 10px;">
-                        <i class="fas fa-user-ninja"></i>
-                    </div>
-                    
-                    <h2>Atualizar Dados</h2>
-                    <p>Mantenha suas informações e biometria em dia</p>
-                </div>
+                    <img src="img/logo.png" alt="Logo LDL Fitness" class="form-logo">
+                     <h2>Atualizar Dados</h2>
+                      <p>Mantenha suas informações e biometria em dia</p>
+        </div>
 
                 <form id="editProfileForm">
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="text" id="nomeCompleto" name="nomeCompleto" value="João Silva" required>
-                            <label for="nomeCompleto">Nome Completo</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">Nome</label>
                             <div class="input-icon">
                                 <i class="fas fa-user"></i>
                             </div>
                         </div>
 
                         <div class="input-group">
-                            <input type="tel" id="telefone" name="telefone" value="(79) 99999-0000" required>
-                            <label for="telefone">WhatsApp</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Sobrenome</label>
                             <div class="input-icon">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="cpf" name="cpf" required>
+                            <label for="cpf">CPF</label>
+                            <div class="input-icon">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="nascimento" name="nascimento" onfocus="(this.type='date')" onblur="(this.type=this.value?'date':'text')" required>
+                            <label for="nascimento">Data de Nasc.</label>
+                            <div class="input-icon">
+                                <i class="fas fa-calendar-alt"></i>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group full-width">
-                            <input type="email" id="email" name="email" value="joao.silva@email.com" required>
+                            <input type="email" id="email" name="email" required>
                             <label for="email">E-mail</label>
                             <div class="input-icon">
                                 <i class="fas fa-envelope"></i>
@@ -81,32 +96,30 @@
                         </div>
                     </div>
 
-                    <h4 style="color: var(--amarelo); margin: 20px 0 10px 0; font-family: 'Orbitron', sans-serif;">Biometria Atual</h4>
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="number" step="0.1" id="peso" name="peso" value="85.5" required>
-                            <label for="peso">Peso (kg)</label>
+                            <input type="text" id="endereco" name="endereco" required>
+                            <label for="endereco">Endereço (Rua, Nº)</label>
                             <div class="input-icon">
-                                <i class="fas fa-weight"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
                         </div>
 
                         <div class="input-group">
-                            <input type="number" step="0.01" id="altura" name="altura" value="1.80" required>
-                            <label for="altura">Altura (m)</label>
+                            <input type="text" id="bairro" name="bairro" required>
+                            <label for="bairro">Bairro</label>
                             <div class="input-icon">
-                                <i class="fas fa-ruler-vertical"></i>
+                                <i class="fas fa-map-signs"></i>
                             </div>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <div class="input-group full-width">
                             <select id="protocolo" name="protocolo" style="width: 100%; padding: 15px 40px; background: rgba(0,0,0,0.5); border: 1px solid #333; color: white; border-radius: 8px; appearance: none; font-size: 16px;">
                                 <option value="mass" selected>Protocolo MASS (Hipertrofia)</option>
                                 <option value="cut">Protocolo CUT (Definição)</option>
                             </select>
-                            <label for="protocolo" style="top: -10px; font-size: 12px; color: var(--amarelo);">Foco de Treino Atual</label>
+                            <label for="protocolo" style="top: -25px; font-size: 12px; color: var(--amarelo);">Foco de Treino Atual</label>
                             <div class="input-icon">
                                 <i class="fas fa-fire-alt"></i>
                             </div>
@@ -115,7 +128,7 @@
 
                     <div class="form-group" style="flex-direction: column; gap: 15px; margin-top: 20px;">
                         <button type="submit" class="btn-submit" id="submitBtn">
-                            <a href="perfil.html" class="btn-text" style="color: black; text-decoration: none;">Salvar Alterações</a>
+                            <a href="aluno-painel.html" class="btn-text" style="color: black; text-decoration: none;">Salvar Alterações</a>
                             <span class="btn-icon"></span>
                         </button>
 
@@ -129,8 +142,8 @@
         <div class="footer">
             <p>© 2026 LDL Fitness. Lealdade, Disciplina e Luta.</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="instagram.html"><i class="fab fa-instagram"></i></a>
+                <a href="whatsapp.html"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </div>

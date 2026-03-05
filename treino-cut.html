@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo CUT | LDL Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="treinos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="body-painel">
+
+    <header>
+        <nav>
+            <a href="painel.html" class="logo-container">
+                <img src="img/logo.png" alt="Logo LDL Fitness">
+                <span>LDL FITNESS</span>
+            </a>
+            <ul class="nav-logado">
+                <li><a href="aluno-painel.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> VOLTAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="area-treino">
+        <div class="treino-header tema-cut">
+            <i class="fas fa-fire icone-destaque"></i>
+            <h2>Protocolo CUT</h2>
+            <p>Foco: Definição e Condicionamento | Treino A: Pernas e Cardio</p>
+        </div>
+
+        <div class="lista-exercicios">
+            
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: #ff4757;"><i class="fas fa-running"></i></div>
+                <div class="exercicio-info">
+                    <h3>Agachamento Livre (Bi-set c/ Salto)</h3>
+                    <p class="detalhes"><strong>4 Séries</strong> x <strong>15 a 20 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: #ff4757;"><i class="fas fa-bed"></i></div>
+                <div class="exercicio-info">
+                    <h3>Mesa Flexora (Drop-Set)</h3>
+                    <p class="detalhes"><strong>4 Séries</strong> x <strong>Até a falha</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: #ff4757;"><i class="fas fa-heartbeat"></i></div>
+                <div class="exercicio-info">
+                    <h3>Cardio HIIT (Esteira ou Bike)</h3>
+                    <p class="detalhes"><strong>20 Minutos</strong> (1min Alta Int. / 1min Baixa Int.)</p>
+                    <p class="descanso"><i class="fas fa-fire-alt"></i> Máxima Queima</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <button class="btn-finalizar btn-cut" onclick="alert('Treino CUT Concluído! Mais um dia derretendo gordura.')">
+            <i class="fas fa-check-circle"></i> FINALIZAR TREINO
+        </button>
+    </section>
+
+</body>
+</html>

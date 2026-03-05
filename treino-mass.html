@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo MASS | LDL Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="treinos.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="body-painel">
+
+    <header>
+        <nav>
+            <a href="painel.html" class="logo-container">
+                <img src="img/logo.png" alt="Logo LDL Fitness">
+                <span>LDL FITNESS</span>
+            </a>
+            <ul class="nav-logado">
+                <li><a href="aluno-painel.html" class="btn-voltar"><i class="fas fa-arrow-left"></i> VOLTAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="area-treino">
+        <div class="treino-header tema-mass">
+            <i class="fas fa-dumbbell icone-destaque"></i>
+            <h2>Protocolo MASS</h2>
+            <p>Foco: Força e Hipertrofia Bruta | Treino A: Peito e Tríceps</p>
+        </div>
+
+        <div class="lista-exercicios">
+            
+            <div class="exercicio-card">
+                <div class="exercicio-icone"><i class="fas fa-child"></i></div>
+                <div class="exercicio-info">
+                    <h3>Supino Reto (Barra)</h3>
+                    <p class="detalhes"><strong>4 Séries</strong> x <strong>8 a 10 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 90 a 120 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox">
+                    <span class="checkmark mass-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone"><i class="fas fa-angle-double-up"></i></div>
+                <div class="exercicio-info">
+                    <h3>Desenvolvimento com Halteres</h3>
+                    <p class="detalhes"><strong>4 Séries</strong> x <strong>8 a 12 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 90 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox">
+                    <span class="checkmark mass-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone"><i class="fas fa-fist-raised"></i></div>
+                <div class="exercicio-info">
+                    <h3>Tríceps Testa (Polia)</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>10 a 12 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox">
+                    <span class="checkmark mass-check"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <button class="btn-finalizar btn-mass" onclick="alert('Treino MASS Concluído! A matilha se orgulha.')">
+            <i class="fas fa-check-circle"></i> FINALIZAR TREINO
+        </button>
+    </section>
+
+</body>
+</html>

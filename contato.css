@@ -1,0 +1,146 @@
+/* =========================================
+   ESTILOS PARA AS PÁGINAS DE CONTATO
+   ========================================= */
+
+:root {
+    --amarelo: #fce803;
+    --preto: #0d0d0d;
+    --cinza-escuro: #1a1a1a;
+    --cinza-claro: #cccccc;
+    --branco: #ffffff;
+    --cor-wpp: #25D366;
+    --cor-inst: #E1306C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at center, #1a1a1a 0%, var(--preto) 100%);
+}
+
+.contato-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contato-card {
+    background-color: var(--cinza-escuro);
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.icone-gigante {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* Efeito de brilho nas cores das redes sociais */
+.wpp-color { color: var(--cor-wpp); text-shadow: 0 0 20px rgba(37, 211, 102, 0.3); }
+.inst-color { color: var(--cor-inst); text-shadow: 0 0 20px rgba(225, 48, 108, 0.3); }
+
+#contato h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: var(--branco);
+}
+
+#contato p {
+    color: var(--cinza-claro);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Lista de informações */
+.contato-info {
+    list-style: none;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contato-info li {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato-info li:last-child {
+    margin-bottom: 0;
+}
+
+.contato-info strong {
+    color: var(--amarelo);
+}
+
+/* =========================================
+   BOTÕES PRINCIPAIS
+   ========================================= */
+.btn-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+/* Botão WhatsApp */
+.btn-wpp {
+    background-color: var(--cor-wpp);
+    color: var(--branco);
+}
+.btn-wpp:hover { background-color: #1ebe57; transform: translateY(-3px); }
+
+/* Botão Instagram (Usa o gradiente oficial) */
+.btn-inst {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: var(--branco);
+}
+.btn-inst:hover { filter: brightness(1.1); transform: translateY(-3px); }
+
+/* =========================================
+   RODAPÉ E BOTÃO VOLTAR
+   ========================================= */
+.btn-voltar {
+    display: block;
+    color: var(--cinza-claro);
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+.btn-voltar:hover { color: var(--amarelo); }
+
+footer {
+    color: #555;
+    font-size: 12px;
+}
