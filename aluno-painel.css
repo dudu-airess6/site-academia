@@ -92,9 +92,10 @@
     transform: translateY(-3px);
 }
 
-/* Rodapé travado no fundo da tela no Painel */
+/* Rodapé no fundo da tela sem sobrepor o conteúdo */
 .footer-fixo {
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Isso empurra o rodapé pro final se houver espaço sobrando */
 }

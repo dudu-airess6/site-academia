@@ -115,25 +115,25 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                  <div class="form-group">
                         <div class="input-group">
                             <input type="password" id="password" name="password" required>
-                            <label for="password">Senha </label>
+                            <label for="password">Senha</label>
                             <div class="input-icon">
                                 <i class="fas fa-lock"></i>
                             </div>
-                            <button type="button" class="toggle-password" id="togglePassword">
+                            <button type="button" class="toggle-password">
                                 <i class="fas fa-eye"></i>
                             </button>
                         </div>
-                        
+
                         <div class="input-group">
                             <input type="password" id="confirmPassword" name="confirmPassword" required>
                             <label for="confirmPassword">Confirmar Senha</label>
                             <div class="input-icon">
                                 <i class="fas fa-lock"></i>
                             </div>
-                            <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                            <button type="button" class="toggle-password">
                                 <i class="fas fa-eye"></i>
                             </button>
                         </div>
@@ -148,22 +148,19 @@
 
                     <div class="form-group" style="flex-direction: column; gap: 15px;">
                         <button type="submit" class="btn-submit" id="submitBtn">
-                            <a href="login.html" class="btn-text">Finalizar Matrícula</a>
-                            <span class="btn-icon">
-                            </span>
+                            <span class="btn-text">Finalizar Matrícula</span>
                         </button>
 
                         <a href="login.html" class="btn-back-outline"> Voltar </a>
                     </div>
-                </form>
+                </form> 
 
                 <div class="success-message" id="successMessage">
                     <div class="success-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3>Matrícula Pré-Aprovada!</h3>
+                    <h3>Matrícula Aprovada!</h3>
                     <p>Bem-vindo à família LDL Fitness.</p>
-                    <p class="success-details">Verifique seu e-mail para concluir o pagamento e ativar seu plano.</p>
                     <button class="btn-continue" id="continueBtn">Continuar</button>
                 </div>
             </div>
@@ -181,5 +178,7 @@
     <div class="notification" id="notification">
         <p id="notificationText"></p>
     </div>
+    <script src="main.js" defer></script>
+    <script src="cadastro.js" defer></script>
 </body>
 </html>
