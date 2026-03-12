@@ -12,7 +12,7 @@
 
     <header>
         <nav>
-            <a href="painel.html" class="logo-container">
+            <a href="aluno-painel.html" class="logo-container">
                 <img src="img/logo.png" alt="Logo LDL Fitness">
                 <span>LDL FITNESS</span>
             </a>
@@ -23,59 +23,244 @@
     </header>
 
     <section class="area-treino">
+        
         <div class="treino-header tema-cut">
-            <i class="fas fa-fire icone-destaque"></i>
-            <h2>Protocolo CUT</h2>
-            <p>Foco: Definição e Condicionamento | Treino A: Pernas e Cardio</p>
+            <i class="fas fa-fire icone-destaque" style="color: var(--laranja, #ff7300);"></i>
+            <h2>Treino A: Empurrar + HIIT</h2>
+            <p>Foco: Queima e Definição | Peito, Ombro e Tríceps</p>
         </div>
 
         <div class="lista-exercicios">
-            
             <div class="exercicio-card">
-                <div class="exercicio-icone" style="color: #ff4757;"><i class="fas fa-running"></i></div>
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-dumbbell"></i></div>
                 <div class="exercicio-info">
-                    <h3>Agachamento Livre (Bi-set c/ Salto)</h3>
-                    <p class="detalhes"><strong>4 Séries</strong> x <strong>15 a 20 Reps</strong></p>
+                    <h3>Supino Inclinado c/ Halteres</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>12 a 15 Reps</strong></p>
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-cut-a1">
                     <span class="checkmark cut-check"></span>
                 </label>
             </div>
 
             <div class="exercicio-card">
-                <div class="exercicio-icone" style="color: #ff4757;"><i class="fas fa-bed"></i></div>
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-hand-rock"></i></div>
                 <div class="exercicio-info">
-                    <h3>Mesa Flexora (Drop-Set)</h3>
-                    <p class="detalhes"><strong>4 Séries</strong> x <strong>Até a falha</strong></p>
+                    <h3>Flexão de Braços</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>Até a Falha</strong></p>
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-cut-a2">
                     <span class="checkmark cut-check"></span>
                 </label>
             </div>
 
             <div class="exercicio-card">
-                <div class="exercicio-icone" style="color: #ff4757;"><i class="fas fa-heartbeat"></i></div>
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-child"></i></div>
                 <div class="exercicio-info">
-                    <h3>Cardio HIIT (Esteira ou Bike)</h3>
-                    <p class="detalhes"><strong>20 Minutos</strong> (1min Alta Int. / 1min Baixa Int.)</p>
-                    <p class="descanso"><i class="fas fa-fire-alt"></i> Máxima Queima</p>
+                    <h3>Elevação Lateral (Drop-Set)</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>10 + 10 Reps</strong> (Reduz carga)</p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-cut-a3">
                     <span class="checkmark cut-check"></span>
                 </label>
             </div>
 
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-arrow-down"></i></div>
+                <div class="exercicio-info">
+                    <h3>Tríceps Corda</h3>
+                    <p class="detalhes"><strong>4 Séries</strong> x <strong>15 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 40 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-a4">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-stopwatch"></i></div>
+                <div class="exercicio-info">
+                    <h3>Cardio HIIT (Esteira/Bike)</h3>
+                    <p class="detalhes"><strong>15 Minutos</strong> (1 min forte / 1 min fraco)</p>
+                    <p class="descanso"><i class="fas fa-heartbeat"></i> Foco total</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-a5">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
         </div>
 
-        <button class="btn-finalizar btn-cut" onclick="alert('Treino CUT Concluído! Mais um dia derretendo gordura.')">
-            <i class="fas fa-check-circle"></i> FINALIZAR TREINO
-        </button>
+        <br>
+
+        <div class="treino-header tema-cut">
+            <i class="fas fa-bolt icone-destaque" style="color: var(--laranja, #ff7300);"></i>
+            <h2>Treino B: Costas e Core</h2>
+            <p>Foco: Postura e Abdômen | Costas e Bíceps</p>
+        </div>
+
+        <div class="lista-exercicios">
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-arrow-up"></i></div>
+                <div class="exercicio-info">
+                    <h3>Puxada Alta Aberta</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>12 a 15 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-b1">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-dumbbell"></i></div>
+                <div class="exercicio-info">
+                    <h3>Remada Serrote</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>12 Reps</strong> (Cada lado)</p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 40 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-b2">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-hand-rock"></i></div>
+                <div class="exercicio-info">
+                    <h3>Rosca Simultânea c/ Halteres</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>12 a 15 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 40 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-b3">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-burn"></i></div>
+                <div class="exercicio-info">
+                    <h3>Abdominal Infra</h3>
+                    <p class="detalhes"><strong>4 Séries</strong> x <strong>15 a 20 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 40 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-b4">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-stopwatch"></i></div>
+                <div class="exercicio-info">
+                    <h3>Prancha Isométrica</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>1 Minuto</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-b5">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="treino-header tema-cut">
+            <i class="fas fa-running icone-destaque" style="color: var(--laranja, #ff7300);"></i>
+            <h2>Treino C: Pernas Metabólico</h2>
+            <p>Foco: Gasto Calórico Elevado | Membros Inferiores</p>
+        </div>
+
+        <div class="lista-exercicios">
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-running"></i></div>
+                <div class="exercicio-info">
+                    <h3>Agachamento Goblet</h3>
+                    <p class="detalhes"><strong>4 Séries</strong> x <strong>12 a 15 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-c1">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-shoe-prints"></i></div>
+                <div class="exercicio-info">
+                    <h3>Passada / Afundo</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>12 Passos</strong> (Por perna)</p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 45 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-c2">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-chair"></i></div>
+                <div class="exercicio-info">
+                    <h3>Cadeira Extensora (Isometria 2s)</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>15 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 40 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-c3">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-bed"></i></div>
+                <div class="exercicio-info">
+                    <h3>Mesa Flexora</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>15 Reps</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 40 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-c4">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+
+            <div class="exercicio-card">
+                <div class="exercicio-icone" style="color: var(--laranja, #ff7300);"><i class="fas fa-heartbeat"></i></div>
+                <div class="exercicio-info">
+                    <h3>Polichinelos ou Corda</h3>
+                    <p class="detalhes"><strong>3 Séries</strong> x <strong>1 Minuto</strong></p>
+                    <p class="descanso"><i class="fas fa-clock"></i> Descanso: 30 seg</p>
+                </div>
+                <label class="check-container">
+                    <input type="checkbox" id="chk-cut-c5">
+                    <span class="checkmark cut-check"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="botoes-finais" style="display: flex; flex-direction: column; gap: 15px; margin-top: 30px;">
+            
+            <button id="btnSelecionarTodos" style="background-color: transparent; border: 2px solid var(--laranja, #ff7300); color: var(--laranja, #ff7300); font-weight: bold; padding: 15px; border-radius: 8px; width: 100%; cursor: pointer; font-size: 16px;">
+                <i class="fas fa-check-double"></i> MARCAR TODOS OS EXERCÍCIOS
+            </button>
+
+            <button id="btnFinalizar" class="btn-finalizar" style="background-color: var(--laranja, #ff7300); color: #fff; font-weight: bold; border: none; padding: 15px; border-radius: 8px; width: 100%; cursor: pointer; font-size: 16px;">
+                <i class="fas fa-check-circle"></i> FINALIZAR TREINO DA SEMANA
+            </button>
+            
+        </div>
     </section>
-<script src="js/main.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/treino.js" defer></script>
 </body>
 </html>
