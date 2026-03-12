@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Aluno | LDL Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aluno-painel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="body-painel">
+
+    <header>
+        <nav>
+            <a href="#" class="logo-container">
+                <img src="img/logo.png" alt="Logo LDL Fitness">
+                <span>LDL FITNESS</span>
+            </a>
+            <ul class="nav-logado">
+                <li><a href="Perfil.html"><i class="fas fa-user"></i> MEU PERFIL</a></li>
+                <li><a href="index.html" class="btn-sair"><i class="fas fa-sign-out-alt"></i> SAIR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="escolha-protocolo" class="area-escolha">
+       <h2>Bem-vindo(a), <span id="nomeAtleta" style="color: var(--amarelo); text-transform: uppercase;">Atleta</span>!</h2>
+        <p>A matilha te espera. Selecione o seu foco atual para acessar a sua planilha de exercícios:</p>
+        
+        <div class="cards-container container-protocolos">
+            
+            <div class="card card-mass">
+                <i class="fas fa-dumbbell icon-protocolo icon-mass"></i>
+                <h3>Protocolo MASS</h3>
+                <p class="desc-protocolo">Hipertrofia bruta, volume muscular e progressão de carga.</p>
+                
+                <a href="treino-mass.html" class="btn-protocolo btn-mass">
+                    Acessar Treino MASS
+                </a>
+            </div>
+
+            <div class="card card-cut">
+                <i class="fas fa-fire icon-protocolo icon-cut"></i>
+                <h3>Protocolo CUT</h3>
+                <p class="desc-protocolo">Definição extrema, perda de gordura e condicionamento.</p>
+                
+                <a href="treino-cut.html" class="btn-protocolo btn-cut">
+                    Acessar Treino CUT
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer-fixo">
+        <p>&copy; 2026 LDL Fitness. Lealdade, Disciplina e Luta.</p>
+    </footer>
+<script src="js/main.js" defer></script>
+<script src="js/aluno-painel.js" defer></script>
+</body>
+</html>

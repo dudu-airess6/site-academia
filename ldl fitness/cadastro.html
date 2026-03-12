@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula | LDL Fitness</title>
+    <link rel="stylesheet" href="css/cadastro.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-container">
+                <h1 class="logo">
+                    <i class="fas fa-dumbbell" style="color: var(--amarelo); margin-right: 10px;"></i>
+                    <span class="logo-tech">LDL FITNESS</span>
+                </h1>
+                <p class="tagline">O Seu Shape Começa Aqui</p>
+            </div>
+
+            <div class="tech-elements">
+                <div class="circuit-line"></div>
+                <div class="floating-element element-1">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="floating-element element-2">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="floating-element element-3">
+                    <i class="fas fa-heart-pulse"></i>
+                </div>
+            </div>
+
+            <div class="features">
+                <h3><i class="fas fa-trophy"></i> Metodologia Comprovada</h3>
+                <p>Unimos a força bruta do treino raiz com a precisão da ciência esportiva.</p>
+
+                <h3><i class="fas fa-users"></i> A Matilha</h3>
+                <p>Aqui você não é só um aluno; você faz parte de um time focado em excelência física.</p>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="form-conatiner">
+                <div class="form-header">
+                    <img src="img/logo.png" alt="Logo LDL Fitness" class="form-logo">
+                    
+                    <h2>Faça sua Matrícula</h2>
+                    <p>Dê o primeiro passo para a sua evolução</p>
+                </div>
+
+                <form id="registerForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">Nome</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Sobrenome</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="cpf" name="cpf" required>
+                            <label for="cpf">CPF</label>
+                            <div class="input-icon">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="nascimento" name="nascimento" onfocus="(this.type='date')" onblur="(this.type=this.value?'date':'text')" required>
+                            <label for="nascimento">Data de Nasc.</label>
+                            <div class="input-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group full-width">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">E-mail</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="endereco" name="endereco" required>
+                            <label for="endereco">Endereço (Rua, Nº)</label>
+                            <div class="input-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="bairro" name="bairro" required>
+                            <label for="bairro">Bairro</label>
+                            <div class="input-icon">
+                                <i class="fas fa-map-signs"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" id="password" name="password" required>
+                            <label for="password">Senha</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <label for="confirmPassword">Confirmar Senha</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Aceito as <a href="#" class="terms-link">Normas da Academia</a> e os <a href="#" class="terms-link">Termos de Matrícula</a></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="flex-direction: column; gap: 15px;">
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="btn-text">Finalizar Matrícula</span>
+                        </button>
+
+                        <a href="login.html" class="btn-back-outline"> Voltar </a>
+                    </div>
+                </form> 
+
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Matrícula Aprovada!</h3>
+                    <p>Bem-vindo à família LDL Fitness.</p>
+                    <button class="btn-continue" id="continueBtn">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 LDL Fitness. Lealdade, Disciplina e Luta.</p>
+            <div class="social-links">
+                <a href="instagram.html"><i class="fab fa-instagram"></i></a>
+                <a href="whatsapp.html"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <p id="notificationText"></p>
+    </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/cadastro.js" defer></script>
+</body>
+</html>
