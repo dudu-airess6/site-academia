@@ -41,7 +41,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 90 a 120 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-a1">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -55,7 +55,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 90 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-a2">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -68,7 +68,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-a3">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -82,7 +82,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-a4">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -96,7 +96,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-a5">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -120,7 +120,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 90 a 120 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-b1">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -134,7 +134,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 90 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-b2">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -148,7 +148,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-b3">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -162,7 +162,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-b4">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -176,7 +176,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-b5">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -200,7 +200,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 120 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-c1">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -214,7 +214,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 90 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-c2">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -227,7 +227,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-c3">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -240,7 +240,7 @@
                     <p class="descanso"><i class="fas fa-clock"></i> Descanso: 60 seg</p>
                 </div>
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-c4">
                     <span class="checkmark mass-check"></span>
                 </label>
             </div>
@@ -255,17 +255,24 @@
                 </div>
 
                 <label class="check-container">
-                    <input type="checkbox">
+                    <input type="checkbox" id="chk-mass-c5">
                     <span class="checkmark mass-check"></span>
                 </label>
 
             </div>
         </div>
 
-        <button id="btnFinalizar" class="btn-finalizar btn-hipertrofia"
-            style="background-color: var(--amarelo, #f39c12); color: #000; font-weight: bold; margin-top: 30px; border: none; padding: 15px; border-radius: 8px; width: 100%; cursor: pointer; font-size: 16px;">
-            <i class="fas fa-check-circle">FINALIZAR TREINO DO DIA</i>
-        </button>
+        <div class="botoes-finais" style="display: flex; flex-direction: column; gap: 15px; margin-top: 30px;">
+            
+            <button id="btnSelecionarTodos" style="background-color: transparent; border: 2px solid var(--amarelo, #f39c12); color: var(--amarelo, #f39c12); font-weight: bold; padding: 15px; border-radius: 8px; width: 100%; cursor: pointer; font-size: 16px;">
+                <i class="fas fa-check-double"></i> MARCAR TODOS OS EXERCÍCIOS
+            </button>
+
+            <button id="btnFinalizar" class="btn-finalizar btn-hipertrofia" style="background-color: var(--amarelo, #f39c12); color: #000; font-weight: bold; border: none; padding: 20px; border-radius: 8px; width: 100%; cursor: pointer; font-size: 16px;">
+                <i class="fas fa-check-circle"></i> FINALIZAR TREINO DA SEMANA
+            </button>
+            
+        </div>
 
     </section>
 
