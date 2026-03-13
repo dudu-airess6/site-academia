@@ -190,3 +190,11 @@
     .exercicio-icone { font-size: 24px; width: 40px; }
     .exercicio-info h3 { font-size: 16px; }
 }
+.area-treino {
+ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                      url('../img/fundo-treino.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
