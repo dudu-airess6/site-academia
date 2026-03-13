@@ -83,3 +83,33 @@
 .btn-whatsapp-direto:hover {
     background-color: #1ebe5d;
 }
+
+/* =========================================
+   FUNDO DA PÁGINA E FOOTER FIXO
+   ========================================= */
+
+body.body-painel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                      url('../img/fundo-halter.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Garante a altura total */
+    
+    /* 🔥 A MÁGICA PARA O FOOTER DESCER: Flexbox 🔥 */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-fixo {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    color: var(--cinza-claro, #cccccc); /* Cor do texto com segurança */
+    border-top: 1px solid #333;
+    
+    /* 🔥 EMPURRA O FOOTER LÁ PRO FINAL DA TELA 🔥 */
+    margin-top: auto; 
+    width: 100%;
+}
