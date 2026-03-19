@@ -1,64 +1,95 @@
 /* =========================================
    TREINO.JS - Memória, Checks e Conclusão
    ========================================= */
+
+// Aguarda o DOM carregar completamente
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Pega todos os checkboxes da tela
+    // Seleciona todos os checkboxes da lista de exercícios
     const checkboxes = document.querySelectorAll('.lista-exercicios input[type="checkbox"]');
     
-    // Pega os botões pelo ID
+    // Seleciona os botões pelos IDs
     const btnFinalizar = document.getElementById('btnFinalizar');
     const btnSelecionarTodos = document.getElementById('btnSelecionarTodos');
 
-    // Identificador para separar os treinos no localStorage (pega da página)
+    // Detecta se a URL contém "cut" para diferenciar os treinos
     const isCut = window.location.pathname.includes('cut');
+
+    // Define um prefixo para salvar no localStorage (separa os tipos de treino)
     const prefixo = isCut ? 'treino_cut_' : 'treino_hipertrofia_';
 
     // ==========================================
-    // 1. CARREGAR PROGRESSO SALVO
+    // 1. LOAD PROGRESS (localStorage → UI)
     // ==========================================
+
+    // Percorre todos os checkboxes
     checkboxes.forEach(chk => {
-        const id = chk.id;
+
+        const id = chk.id; // Pega o id do checkbox
         
-        // Se estiver salvo como 'true' na memória, marca o check
+        // Se estiver salvo como 'true', marca o checkbox automaticamente
         if (localStorage.getItem(prefixo + id) === 'true') {
             chk.checked = true;
         }
 
+
         // ==========================================
-        // 2. SALVAR CADA CLIQUE EM TEMPO REAL
+        // 2. REAL-TIME SAVE (UI → localStorage)
         // ==========================================
+
+        // Adiciona event listener de mudança (check/uncheck)
         chk.addEventListener('change', () => {
+
+            // Salva o estado atual (true/false) no localStorage
             localStorage.setItem(prefixo + id, chk.checked);
         });
     });
 
+
     // ==========================================
-    // 3. FUNÇÃO DE MARCAR TODOS
+    // 3. SELECT ALL FUNCTION
     // ==========================================
+
     if (btnSelecionarTodos) {
+
+        // Adiciona event listener no botão
         btnSelecionarTodos.addEventListener('click', () => {
+
+            // Marca todos os checkboxes
             checkboxes.forEach(chk => {
-                chk.checked = true; // Marca na tela
-                chk.dispatchEvent(new Event('change')); // Força o salvamento no localStorage
+
+                chk.checked = true; // Atualiza a UI
+
+                // Dispara manualmente o evento "change"
+                // Isso garante que o localStorage também seja atualizado
+                chk.dispatchEvent(new Event('change'));
             });
         });
     }
 
+
     // ==========================================
-    // 4. FUNÇÃO DE FINALIZAR TREINO
+    // 4. FINALIZAR TREINO
     // ==========================================
+
     if (btnFinalizar) {
+
+        // Adiciona event listener no botão
         btnFinalizar.addEventListener('click', () => {
+
+            // Feedback para o usuário
             alert('Treino Concluído! Músculo destruído com sucesso. Agora é descansar e comer! 🐺👊');
             
-            // Limpa as caixas marcadas para o treino do dia seguinte
+            // Reseta todos os checkboxes
             checkboxes.forEach(chk => {
-                chk.checked = false;
+
+                chk.checked = false; // Desmarca na UI
+
+                // Remove o item correspondente do localStorage
                 localStorage.removeItem(prefixo + chk.id);
             });
             
-            // Retorna o aluno para o painel
+            // Redireciona de volta para o painel do aluno
             window.location.href = 'aluno-painel.html';
         });
     }

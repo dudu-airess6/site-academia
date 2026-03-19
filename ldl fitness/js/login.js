@@ -2,46 +2,64 @@
    LOGIN.JS - Scripts da página de Login
    ========================================= */
 
+// Espera o DOM carregar completamente
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Funcionalidade de Mostrar/Ocultar Senha
+    // --- 1. TOGGLE PASSWORD (mostrar/ocultar senha) ---
+
+    // Seleciona o ícone de toggle (olhinho)
     const togglePassword = document.querySelector('#togglePassword');
+
+    // Seleciona o input de senha
     const passwordInput = document.querySelector('#password');
 
+    // Verifica se ambos existem no DOM
     if (togglePassword && passwordInput) {
+
+        // Adiciona event listener de click no ícone
         togglePassword.addEventListener('click', function () {
-            // Verifica o tipo atual do input de senha
+
+            // Verifica o tipo atual do input e define o próximo tipo
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             
-            // Troca o tipo (de password para text ou vice-versa)
+            // Atualiza o atributo "type" do input
             passwordInput.setAttribute('type', type);
             
-            // Troca o ícone (olho aberto / olho cortado)
+            // Alterna as classes do ícone (eye / eye-slash)
             this.classList.toggle('fa-eye');
             this.classList.toggle('fa-eye-slash');
             
-            // Efeito visual no ícone para mostrar que foi clicado
+            // Aplica feedback visual (cor diferente quando visível)
             this.style.color = type === 'text' ? 'var(--amarelo)' : 'var(--cinza-claro)';
         });
     }
 
-    // 2. Validação simples antes de "Entrar"
+    // --- 2. VALIDAÇÃO SIMPLES DO LOGIN ---
+
+    // Seleciona o botão de login
     const loginBtn = document.querySelector('.login-btn');
+
+    // Seleciona o input de email
     const emailInput = document.querySelector('#email');
 
     if (loginBtn) {
+
+        // Adiciona event listener de click no botão
         loginBtn.addEventListener('click', function(e) {
-            // Se o e-mail ou a senha estiverem vazios...
+
+            // Verifica se email ou senha estão vazios
             if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
-                e.preventDefault(); // Impede de ir para o painel do aluno
+
+                e.preventDefault(); // Impede ação padrão (ex: submit ou redirect)
                 
-                // Alerta nativo do navegador (pode ser substituído por um modal no futuro)
+                // Exibe alerta simples
                 alert('Foco na missão! Preencha seu e-mail e senha para acessar o treino.');
                 
-                // Dá um destaque visual rápido nos campos vazios
+                // Destaca campos vazios com borda vermelha
                 if (emailInput.value.trim() === '') emailInput.style.borderColor = '#ff4757';
                 if (passwordInput.value.trim() === '') passwordInput.style.borderColor = '#ff4757';
                 
+                // Após 2 segundos, volta a cor original
                 setTimeout(() => {
                     emailInput.style.borderColor = '#333';
                     passwordInput.style.borderColor = '#333';
