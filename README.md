@@ -41,18 +41,23 @@ Abaixo, você pode conferir a interface da plataforma LDL Fitness em funcionamen
 ### 🖥️ Institucional e Acesso
 | Home Page (Nossa História) | Tela de Acesso (Login) |
 |---|---|
-| ![Home Page]<img width="1919" height="1039" alt="Captura de tela 2026-03-20 143202" src="https://github.com/user-attachments/assets/fa4e0ba7-127e-46d0-843b-89a7e886d0a9" />
- | ![Login](Captura%20de%20tela%202026-03-20%20143350.png) |
+| ![Home Page]<img width="1919" height="992" alt="Captura de tela 2026-03-20 143340" src="https://github.com/user-attachments/assets/43991d7c-61c4-4881-ad75-9d61b1cea7d8" />
+
+ | ![Login]<img width="1919" height="991" alt="Captura de tela 2026-03-20 143350" src="https://github.com/user-attachments/assets/36590ff4-1335-4046-a53a-60dfe532c0f9" />
+ |
 
 ### 🏋️ Área do Aluno & Protocolos
 | Dashboard do Aluno | Atualização de Dados (Perfil) |
 |---|---|
-| ![Dashboard](Captura%20de%20tela%202026-03-20%20143202.png) | ![Perfil](Captura%20de%20tela%202026-03-20%20143324.png) |
+| ![Dashboard]<img width="1919" height="1039" alt="Captura de tela 2026-03-20 143202" src="https://github.com/user-attachments/assets/36d79042-26b7-494b-bf26-6a58f4e6fbc1" />
+ | ![Perfil]<img width="1919" height="993" alt="Captura de tela 2026-03-20 143324" src="https://github.com/user-attachments/assets/59ab39a9-3ee1-4ffc-8369-46bf5cb2af31" />
+ |
 
 ### 📞 Suporte e Contato
 | Central da Matilha (Contato) |
 |---|
-| ![Contato](Captura%20de%20tela%202026-03-20%20143237.png) |
+| ![Contato]<img width="1919" height="992" alt="Captura de tela 2026-03-20 143237" src="https://github.com/user-attachments/assets/0bfd5ad9-f4a4-43f1-9b43-d90d475a79fa" />
+ |
 
 ## 📂 Estrutura de Pastas
 
