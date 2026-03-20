@@ -39,21 +39,19 @@ Para este projeto, foi utilizada uma estrutura focada em performance e responsiv
 Abaixo, você pode conferir a interface da plataforma LDL Fitness em funcionamento:
 
 ### 🖥️ Institucional e Acesso
-| Home Page (História) | Tela de Login |
+| Home Page (Nossa História) | Tela de Acesso (Login) |
 |---|---|
-| ![Home Page](https://raw.githubusercontent.com/dudu-airess6/site-academia/main/Captura%20de%20tela%202026-03-20%20143340.png) | ![Login](https://raw.githubusercontent.com/dudu-airess6/site-academia/main/Captura%20de%20tela%202026-03-20%20143350.png) |
+| ![Home Page](Captura%20de%20tela%202026-03-20%20143340.png) | ![Login](Captura%20de%20tela%202026-03-20%20143350.png) |
 
-### 🏋️ Painel do Atleta
-| Dashboard de Treinos | Atualização de Perfil |
+### 🏋️ Área do Aluno & Protocolos
+| Dashboard do Aluno | Atualização de Dados (Perfil) |
 |---|---|
-| ![Dashboard](https://raw.githubusercontent.com/dudu-airess6/site-academia/main/Captura%20de%20tela%202026-03-20%20143202.png) | ![Perfil](https://raw.githubusercontent.com/dudu-airess6/site-academia/main/Captura%20de%20tela%202026-03-20%20143324.png) |
+| ![Dashboard](Captura%20de%20tela%202026-03-20%20143202.png) | ![Perfil](Captura%20de%20tela%202026-03-20%20143324.png) |
 
-### 📞 Suporte
+### 📞 Suporte e Contato
 | Central da Matilha (Contato) |
 |---|
-| ![Contato](https://raw.githubusercontent.com/dudu-airess6/site-academia/main/Captura%20de%20tela%202026-03-20%20143237.png) |
-
----
+| ![Contato](Captura%20de%20tela%202026-03-20%20143237.png) |
 
 ## 📂 Estrutura de Pastas
 
