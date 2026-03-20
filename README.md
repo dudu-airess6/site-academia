@@ -41,7 +41,8 @@ Abaixo, você pode conferir a interface da plataforma LDL Fitness em funcionamen
 ### 🖥️ Institucional e Acesso
 | Home Page (Nossa História) | Tela de Acesso (Login) |
 |---|---|
-| ![Home Page](Captura%20de%20tela%202026-03-20%20143340.png) | ![Login](Captura%20de%20tela%202026-03-20%20143350.png) |
+| ![Home Page]<img width="1919" height="1039" alt="Captura de tela 2026-03-20 143202" src="https://github.com/user-attachments/assets/fa4e0ba7-127e-46d0-843b-89a7e886d0a9" />
+ | ![Login](Captura%20de%20tela%202026-03-20%20143350.png) |
 
 ### 🏋️ Área do Aluno & Protocolos
 | Dashboard do Aluno | Atualização de Dados (Perfil) |
@@ -65,4 +66,3 @@ Abaixo, você pode conferir a interface da plataforma LDL Fitness em funcionamen
 ├── aluno-painel.html # Dashboard de seleção de protocolos
 ├── perfil.html     # Edição de dados biométricos
 └── comunicacao.html  # Central de suporte e links
-<img width="1919" height="1039" alt="Captura de tela 2026-03-20 143202" src="https://github.com/user-attachments/assets/0e99ed6a-d092-4a1f-9e8c-ee99727d15b1" />
