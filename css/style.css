@@ -312,3 +312,32 @@ footer {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&family=Oswald:wght@500;700&family=Poppins:wght@400;600;700&display=swap');
+/* Botão do Hero/Home */
+.btn-hero {
+    color: var(--amarelo);
+    border: 1px solid var(--amarelo);
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.home-subtitle {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+/* Informações do Treinador */
+.trainer-name {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.trainer-cref {
+    color: var(--amarelo);
+    font-weight: bold;
+    margin-bottom: 20px;
+}

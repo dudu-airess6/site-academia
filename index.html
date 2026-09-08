@@ -8,11 +8,11 @@
     <!-- 1. Favicon -->
     <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
 
-    <!-- 2. Pré-conexão Google Fonts (Otimização) -->
+    <!-- 2. Pré-conexão Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- 3. Fontes do Projeto (Inter e Oswald) -->
+    <!-- 3. Fontes do Projeto -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- 4. CSS Principal -->
@@ -26,20 +26,21 @@
                 <img src="img/logo.webp" alt="Logo LDL Fitness">
                 <span>LDL FITNESS</span>
             </a>
-           <ul>
+            <ul>
                 <li><a href="#sobre">SOBRE NÓS</a></li>
                 <li><a href="#servicos">SERVIÇOS</a></li>
                 <li><a href="#treinador">TREINADOR</a></li>
                 <li><a href="#contato">CONTATO</a></li>
+                <li><a href="login.html" class="btn-login-nav">LOGIN</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
-        <img src="img/logo.webp" alt="Logo LDL Fitness">
-        <h1>Centro de treinamento</h1>
-        <p style="color: white; font-size: 24px;">O Seu Shape Começa Aqui!</p>
-        <a href="login.html" style="color: var(--amarelo); border: 1px solid var(--amarelo); padding: 10px 30px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 20px;">LOGIN</a>
+        <img src="img/logo.webp" alt="Logo LDL Fitness" class="home-logo">
+        <h1>Centro de Treinamento</h1>
+        <p class="home-subtitle">O Seu Shape Começa Aqui!</p>
+        <a href="login.html" class="btn-hero">LOGIN</a>
     </section>
 
     <div class="bg-cinza">
@@ -48,11 +49,10 @@
             <div class="flex-container">
                 <div class="flex-content">
                     <p>A <strong>LDL Fitness</strong> é o território de quem não aceita desculpas. Unimos a força bruta do treino raiz com a precisão da ciência esportiva. Aqui, você não é apenas mais um aluno; você é parte da matilha que busca a excelência física e mental todos os dias.</p>
-                    <br>
                     <p>O que começou com um par de halteres e a determinação do Coach Lucas, transformou-se na LDL Fitness. O nome carrega o peso da nossa trajetória: <strong>Lealdade, Disciplina e Luta</strong>. Evoluímos de um estúdio personalizado para um centro de performance que é referência em resultados reais e transformações de impacto.</p>
                 </div>
                 <div class="flex-image">
-                    <img src="img/istockphoto-1322158059-612x612.webp" alt="Nossa história" class="img-destaque">
+                    <img src="img/istockphoto-1322158059-612x612.webp" alt="História da LDL Fitness" class="img-destaque">
                 </div>
             </div>
         </section>
@@ -62,7 +62,7 @@
         <h2>Nossos Serviços</h2>
         
         <div class="flex-container row-reverse">
-            <div class="flex-content">
+            <div class="flex-content text-center">
                 <p>Treine com quem entende.</p>
                 <p>O nosso Coach oferece dois protocolos exclusivos focados no seu objetivo para garantir o máximo de eficiência na sua evolução.</p>
             </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="card">
                 <h3>Protocolo CUT</h3>
-                <p>Mix de musculação de alta intensidade com estímulos metabólicos para derreter gordura mantendo a massa magra extrema definição.</p>
+                <p>Mix de musculação de alta intensidade com estímulos metabólicos para derreter gordura mantendo a massa magra e a extrema definição.</p>
             </div>
         </div>
 
@@ -92,8 +92,8 @@
                     <img src="img/963296565-shutterstock169282331-1.webp" alt="Treinador Lucas Diniz" class="img-destaque">
                 </div>
                 <div class="flex-content">
-                    <h3 style="color: white; font-size: 28px; margin-bottom: 10px;">Lucas Diniz</h3>
-                    <p style="color: var(--amarelo); font-weight: bold; margin-bottom: 20px;">CREF 000000-G/SP</p>
+                    <h3 class="trainer-name">Lucas Diniz</h3>
+                    <p class="trainer-cref">CREF 000000-G/SP</p>
                     <p>Referência em musculação competitiva e reabilitação física. Lucas acredita que o treino perfeito é aquele que desafia seus limites com técnica impecável. Especialista em levar pessoas comuns ao nível de atletas, com mais de 10 anos de experiência transformando físicos.</p>
                 </div>
             </div>
@@ -109,12 +109,12 @@
             <li><strong>📸 Instagram:</strong> @ldlfitness_oficial</li>
             <li><strong>📧 E-mail:</strong> contato@ldlfitness.com.br</li>
         </ul>
-        <br>
     </section>
 
     <footer>
         <p>&copy; 2026 LDL Fitness. Todos os direitos reservados.</p>
     </footer>
-<script src="js/main.js" defer></script>
+
+    <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -21,7 +21,6 @@
    2. BASE E BODY
    ========================================= */
 body {
-    /* Fundo escurecido com tema de academia/ferro */
     background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
                 url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop');
     background-size: cover;
@@ -55,7 +54,7 @@ body {
 /* --- Painel Esquerdo --- */
 .left-panel {
     flex: 1;
-    min-width: 350px;
+    min-width: 320px;
     background: linear-gradient(135deg, rgba(252, 232, 3, 0.1) 0%, rgba(13, 13, 13, 1) 100%);
     padding: 50px 40px;
     display: flex;
@@ -68,12 +67,18 @@ body {
 /* --- Painel Direito --- */
 .right-panel {
     flex: 1.5;
-    min-width: 400px;
+    min-width: 320px;
     background-color: var(--preto);
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* =========================================
@@ -196,7 +201,7 @@ body {
 .input-group {
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .input-group.full-width {
@@ -207,12 +212,18 @@ body {
     width: 100%;
     background-color: var(--cinza-escuro);
     border: 1px solid var(--borda-fina);
-    padding: 15px 15px 15px 45px;
+    padding: 15px 45px 15px 45px;
     border-radius: 8px;
     color: var(--branco);
     font-size: 15px;
     outline: none;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+
+/* Manter fundo escuro no autopreenchimento do navegador */
+.input-group input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--cinza-escuro) inset !important;
+    -webkit-text-fill-color: var(--branco) !important;
 }
 
 .input-group input:focus {
@@ -242,7 +253,8 @@ body {
 .input-icon {
     position: absolute;
     left: 15px;
-    top: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     color: #888;
     transition: 0.3s;
 }
@@ -254,12 +266,14 @@ body {
 .toggle-password {
     position: absolute;
     right: 15px;
-    top: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     background: none;
     border: none;
     color: #888;
     cursor: pointer;
     font-size: 16px;
+    transition: color 0.3s;
 }
 
 .toggle-password:hover {
@@ -273,7 +287,7 @@ body {
     gap: 10px;
     font-size: 14px;
     color: var(--cinza-claro);
-    margin-top: -10px;
+    margin-top: 5px;
 }
 
 .checkbox-group input[type="checkbox"] {
@@ -364,10 +378,9 @@ body {
 }
 
 .btn-continue:active {
-    transform: scale(0.95); /* Efeito de "afundar" ao clicar */
+    transform: scale(0.95);
 }
 
-/* Ajustes para a tela de sucesso ficar mais alinhada */
 #successMessage h3 {
     color: var(--amarelo);
     font-size: 26px;
@@ -376,7 +389,7 @@ body {
 
 .success-icon {
     font-size: 60px;
-    color: #2ed573; /* Verde sucesso */
+    color: #2ed573;
     margin-bottom: 10px;
     animation: scaleIn 0.5s ease-out;
 }
@@ -463,8 +476,10 @@ body {
     
     .left-panel, .right-panel {
         width: 100%;
+        min-width: 100%;
         border-right: none;
         border-bottom: 1px solid var(--borda-fina);
+        padding: 30px 20px;
     }
 
     .footer {
@@ -477,6 +492,10 @@ body {
 @media (max-width: 600px) {
     .form-group {
         flex-direction: column;
-        gap: 0;
+        gap: 15px;
+    }
+
+    .input-group {
+        margin-top: 15px;
     }
 }
