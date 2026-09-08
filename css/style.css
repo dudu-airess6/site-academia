@@ -26,7 +26,11 @@ body {
 }
 
 /* Hierarquia Tipográfica Global */
-h1, h2, h3, h4, .logo-container span {
+h1,
+h2,
+h3,
+h4,
+.logo-container span {
     font-family: var(--fonte-titulo);
     letter-spacing: 1.5px;
 }
@@ -117,8 +121,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
-                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,7 +130,7 @@ p {
 }
 
 #home img {
-    width: 250px;   
+    width: 250px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -169,7 +173,7 @@ p {
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 40px;
-    text-align: left; 
+    text-align: left;
 }
 
 .flex-content {
@@ -177,21 +181,21 @@ p {
 }
 
 .flex-content p {
-    margin-left: 0; 
+    margin-left: 0;
     max-width: 100%;
 }
 
 .flex-content-1 {
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    text-align: center;      
-    width: 100%;             
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 .flex-content-1 p {
-    margin: 0 auto;          
-    max-width: 900px;        
+    margin: 0 auto;
+    max-width: 900px;
     color: var(--cinza-claro);
 }
 
@@ -210,10 +214,10 @@ p {
     width: 100%;
     max-width: 500px;
     height: auto;
-    border-radius: 15px; 
-    border: 2px solid var(--amarelo); 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); 
-    object-fit: cover; 
+    border-radius: 15px;
+    border: 2px solid var(--amarelo);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    object-fit: cover;
 }
 
 .banner-container {
@@ -224,11 +228,11 @@ p {
 .img-banner {
     width: 100%;
     max-width: 1000px;
-    height: 300px; 
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     border: 1px solid #333;
-    opacity: 0.8; 
+    opacity: 0.8;
     transition: opacity 0.3s;
 }
 
@@ -251,7 +255,7 @@ p {
     border-radius: 10px;
     width: 350px;
     text-align: left;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
 .card:hover {
@@ -291,17 +295,20 @@ footer {
     #home h1 {
         font-size: 40px;
     }
-    
-    .flex-container, .flex-container.row-reverse {
+
+    .flex-container,
+    .flex-container.row-reverse {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .flex-content p {
         margin: 0 auto 20px auto;
     }
-    
+
     .img-banner {
-        height: 200px; 
+        height: 200px;
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&family=Oswald:wght@500;700&family=Poppins:wght@400;600;700&display=swap');
