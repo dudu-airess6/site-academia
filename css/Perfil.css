@@ -120,7 +120,7 @@ body {
     align-items: center;
 }
 
-.form-conatiner { /* Mantendo a classe com o erro de digitação do HTML para não quebrar */
+.form-container { /* Mantendo a classe com o erro de digitação do HTML para não quebrar */
     width: 100%;
     max-width: 500px;
 }
@@ -313,3 +313,4 @@ body {
         margin-top: 30px;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&family=Oswald:wght@500;700&family=Poppins:wght@400;600;700&display=swap');
